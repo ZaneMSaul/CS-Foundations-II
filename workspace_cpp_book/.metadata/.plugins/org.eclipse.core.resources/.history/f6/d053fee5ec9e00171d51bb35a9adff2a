@@ -1,0 +1,78 @@
+/*
+ * Main.cpp
+ *
+ *  Created on: Sep 19, 2017
+ *      Author: two
+ */
+#include<iostream>
+using namespace std;
+
+int *resize(int * arrayPointer, int currentSize, int newSize);
+void printValues(int *arrayPointer, int size);
+int * reverse (int *arrayPointer, int size) ;
+
+int main() {
+	const int SIZE1 = 10;
+	const int SIZE2 = 25;
+	const int SIZE3 = 60;
+	 const int SIZE4 =   8;
+
+	int *arrayPointer = new int[SIZE1];
+	for (int i = 0; i < SIZE1; i++) {
+		arrayPointer[i] = i;
+	}
+	printValues(arrayPointer, SIZE1);
+
+//	int *reverseArray  = reverse(arrayPointer, SIZE1);
+//	printValues (reverseArray, SIZE1);
+
+	int index = 0;
+	arrayPointer = resize(arrayPointer, SIZE1, SIZE2);
+	cout << "Setting values for indices " << SIZE1 << " to " << SIZE2 << endl;
+	for (int i=SIZE1; i<SIZE2; i++) {
+		arrayPointer[i] = index;
+		index++;
+	}
+	printValues(arrayPointer, SIZE2);
+//
+//	index = 0;
+//	arrayPointer = resize(arrayPointer, SIZE2, SIZE3);
+//	for (int i=SIZE2; i<SIZE3; i++) {
+//		arrayPointer[i] = index;
+//		index++;
+//	}
+//	printValues(arrayPointer, SIZE3);
+
+//	arrayPointer = resize(arrayPointer, SIZE3, SIZE4);
+//	printValues(arrayPointer, SIZE4);
+}
+
+int * resize(int *arrayPointer, int currentSize, int newSize) {
+	int *newArrayPointer = new int[newSize];
+	for (int i = 0; i < currentSize; i++) {
+		newArrayPointer[i] = arrayPointer[i];
+	}
+
+	delete[] arrayPointer;
+	return newArrayPointer;
+}
+
+int * reverse (int *arrayPointer, int size) {
+   int * reverseArrayPointer = new int[size];
+   int fromTheEnd = size - 1;
+   for (int i=0;i<size; i++) {
+	   cout << "@@@@@ in reverse: putting value at " << i << " into location " << fromTheEnd << endl;
+	   reverseArrayPointer [fromTheEnd] = arrayPointer[i];
+	   fromTheEnd--;
+   }
+   return reverseArrayPointer;
+}
+
+void printValues(int *arrayPointer, int size) {
+	cout << "Values for array at " << arrayPointer << " with size " << size << endl;
+	for (int i = 0; i < size; i++) {
+		cout << "array[" << i << "]: " << arrayPointer[i] << endl;
+	}
+	cout << endl;
+}
+

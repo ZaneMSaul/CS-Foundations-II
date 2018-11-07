@@ -1,0 +1,1 @@
+CollegeKey.o: ../CollegeKey.cpp

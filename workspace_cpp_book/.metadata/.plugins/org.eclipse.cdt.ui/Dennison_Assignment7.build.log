@@ -1,0 +1,25 @@
+13:20:02 **** Build of configuration Debug for project Dennison_Assignment7 ****
+make all 
+Building file: ../BankAccount.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BankAccount.d" -MT"BankAccount.d" -o "BankAccount.o" "../BankAccount.cpp"
+Finished building: ../BankAccount.cpp
+ 
+Building file: ../SavingsAccount.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SavingsAccount.d" -MT"SavingsAccount.d" -o "SavingsAccount.o" "../SavingsAccount.cpp"
+Finished building: ../SavingsAccount.cpp
+ 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: Dennison_Assignment7
+Invoking: GCC C++ Linker
+g++  -o "Dennison_Assignment7"  ./BankAccount.o ./SavingsAccount.o ./main.o   
+Finished building target: Dennison_Assignment7
+ 
+
+13:20:03 Build Finished (took 670ms)
+

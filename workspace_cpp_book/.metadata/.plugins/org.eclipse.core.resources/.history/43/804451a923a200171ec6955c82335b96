@@ -1,0 +1,24 @@
+#include <string>
+#include <iostream>
+#include <cstdlib>
+#include<vector>
+
+using namespace std;
+int main() {
+	vector<string> movies;
+
+	movies.push_back("Blade Runner");
+	movies.push_back("Blade Runner 2049");
+	movies.push_back("Bambi");
+
+	const unsigned int NOT_FOUND = -1;
+
+	int size = movies.size();
+	for (int i = 0; i < size; i++) {
+		if (movies[i].find("Blade Runner") != -1) {
+			cout << "Found it in item " << i << endl;
+		}
+	}
+	return 0;
+
+}

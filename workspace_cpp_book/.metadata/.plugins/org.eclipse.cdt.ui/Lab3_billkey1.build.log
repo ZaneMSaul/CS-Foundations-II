@@ -1,0 +1,15 @@
+13:54:38 **** Build of configuration Debug for project Lab3_billkey1 ****
+make all 
+Building file: ../BillKey1.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BillKey1.d" -MT"BillKey1.o" -o "BillKey1.o" "../BillKey1.cpp"
+Finished building: ../BillKey1.cpp
+ 
+Building target: Lab3_billkey1.exe
+Invoking: Cygwin C++ Linker
+g++  -o "Lab3_billkey1.exe"  ./BillKey1.o   
+Finished building target: Lab3_billkey1.exe
+ 
+
+13:54:39 Build Finished (took 843ms)
+

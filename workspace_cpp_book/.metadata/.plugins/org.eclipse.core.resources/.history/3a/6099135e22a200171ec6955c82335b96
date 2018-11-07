@@ -1,0 +1,12 @@
+#include <string>
+#include <iostream>
+#include <cstdlib>
+#include<vector>
+
+int main () {
+	string movieName = "Blade Runner 2049";
+	movieName.find
+
+	return 0;
+
+}

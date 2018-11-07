@@ -1,0 +1,15 @@
+13:54:40 **** Build of configuration Debug for project Lab5_BillFile ****
+make all 
+Building file: ../BillFile.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BillFile.d" -MT"BillFile.o" -o "BillFile.o" "../BillFile.cpp"
+Finished building: ../BillFile.cpp
+ 
+Building target: Lab5_BillFile.exe
+Invoking: Cygwin C++ Linker
+g++  -o "Lab5_BillFile.exe"  ./BillFile.o   
+Finished building target: Lab5_BillFile.exe
+ 
+
+13:54:41 Build Finished (took 1s.80ms)
+

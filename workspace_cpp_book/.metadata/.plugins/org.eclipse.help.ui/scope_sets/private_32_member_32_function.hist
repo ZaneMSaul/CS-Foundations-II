@@ -1,0 +1,4 @@
+#Mon Oct 02 11:31:38 CDT 2017
+__DEFAULT__=false
+org.eclipse.help.ui.localSearch.master=true
+expression=private member function

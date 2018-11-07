@@ -1,0 +1,15 @@
+12:56:22 **** Build of configuration Debug for project Lab6_2_ConvertCurrency ****
+make all 
+Building file: ../ConvertCurrency.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ConvertCurrency.d" -MT"ConvertCurrency.d" -o "ConvertCurrency.o" "../ConvertCurrency.cpp"
+Finished building: ../ConvertCurrency.cpp
+ 
+Building target: Lab6_2_ConvertCurrency.exe
+Invoking: GCC C++ Linker
+g++  -o "Lab6_2_ConvertCurrency.exe"  ./ConvertCurrency.o   
+Finished building target: Lab6_2_ConvertCurrency.exe
+ 
+
+12:56:23 Build Finished (took 268ms)
+

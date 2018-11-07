@@ -1,0 +1,1 @@
+StructPointer.d: ../StructPointer.cpp

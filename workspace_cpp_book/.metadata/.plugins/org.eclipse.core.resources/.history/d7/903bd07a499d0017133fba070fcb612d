@@ -1,0 +1,20 @@
+/*
+ * Main.cpp
+ *
+ *  Created on: Sep 19, 2017
+ *      Author: two
+ */
+#include<iostream>
+using namespace std;
+
+int main () {
+	int x = 25;
+	int *ptr = nullptr;
+	ptr = &x;
+	cout << " Memory location of x " << ptr << end;
+
+}
+
+
+
+

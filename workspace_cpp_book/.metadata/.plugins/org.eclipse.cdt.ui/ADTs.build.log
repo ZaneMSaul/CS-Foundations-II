@@ -1,0 +1,15 @@
+12:56:20 **** Build of configuration Debug for project ADTs ****
+make all 
+Building file: ../AbstractDataTypes.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AbstractDataTypes.d" -MT"AbstractDataTypes.d" -o "AbstractDataTypes.o" "../AbstractDataTypes.cpp"
+Finished building: ../AbstractDataTypes.cpp
+ 
+Building target: ADTs
+Invoking: GCC C++ Linker
+g++  -o "ADTs"  ./AbstractDataTypes.o   
+Finished building target: ADTs
+ 
+
+12:56:20 Build Finished (took 371ms)
+

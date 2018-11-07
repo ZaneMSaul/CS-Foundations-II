@@ -1,0 +1,24 @@
+#ifndef ACTOR_H_
+#define ACTOR_H_
+
+#include <string>
+class Actor {
+private:
+    int ID;
+    std::string firstName;
+    std::string lastName;
+    
+public:
+    Actor(int id, std::string firstName, std::string lastname);
+    
+    int getId() const;
+    std::string getFirstName() const ;
+    std::string getLastName() const;
+    void print () const;
+    
+    ~Actor ();//?
+    
+};
+
+#endif /* ACTOR_H_ */
+

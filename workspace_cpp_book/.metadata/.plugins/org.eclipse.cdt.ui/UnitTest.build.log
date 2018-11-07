@@ -1,0 +1,23 @@
+07:46:16 **** Build of configuration Debug for project UnitTest ****
+make all 
+Building file: ../Elephant.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Elephant.d" -MT"Elephant.d" -o "Elephant.o" "../Elephant.cpp"
+Finished building: ../Elephant.cpp
+ 
+Building file: ../Elephant_test.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Elephant_test.d" -MT"Elephant_test.d" -o "Elephant_test.o" "../Elephant_test.cpp"
+Finished building: ../Elephant_test.cpp
+ 
+Building target: UnitTest
+Invoking: GCC C++ Linker
+g++  -o "UnitTest"  ./Elephant.o ./Elephant_test.o   
+/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o: In function `_start':
+(.text+0x20): undefined reference to `main'
+makefile:44: recipe for target 'UnitTest' failed
+collect2: error: ld returned 1 exit status
+make: *** [UnitTest] Error 1
+
+07:46:16 Build Finished (took 129ms)
+

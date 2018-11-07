@@ -1,0 +1,1 @@
+ArrayPointerStructs.d: ../ArrayPointerStructs.cpp

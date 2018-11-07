@@ -1,0 +1,77 @@
+/*
+ * Film.cpp
+ *
+ *  Created on: Oct 2, 2017
+ *      Author: two
+ */
+
+#include "Film.h"
+
+#include <iostream>
+
+using namespace std;
+
+Film::Film(int anID, string aName, string aDescription, string aRating,
+		int theRunningTime) {
+	id = anID;
+	name = aName;
+	description = aDescription;
+	rating = stringToFilmRating(aRating);
+	runningTime = theRunningTime;
+}
+
+Film::Film(int anID, string aName, string aDescription, FilmRating aRating,
+		int theRunningTime) {
+	id = anID;
+	name = aName;
+	description = aDescription;
+	rating = aRating;
+	runningTime = theRunningTime;
+}
+;
+
+string Film::getDescription() const {
+	return description;
+}
+
+string Film::getName() const {
+	return name;
+}
+int Film::getRunningTime() const {
+	return runningTime;
+}
+
+void Film::print() const {
+	cout << "Film name            : " << name << endl;
+	cout << "Film description   : " << description << endl;
+	cout << "Film running time: " << runningTime << endl;
+}
+
+
+
+FilmRating Film::stringToFilmRating(string stringRating) {
+	int const N_RATINGS = 6;
+	string stringRatings[] = { "G", "PG", "PG-13", "NC-17", "R", "UNRATED" };
+	FilmRating ratings[] = { G, PG, PG_13, NC_17, R, UNRATED };
+
+	for (int i = 0; i < N_RATINGS; i++) {
+		if (stringRating == stringRatings[i])
+			return ratings[i];
+	}
+	return UNRATED;
+}
+string Film::filmRatingToString(FilmRating rating) {
+	int const N_RATINGS = 6;
+	string stringRatings[] = { "G", "PG", "PG-13", "NC-17", "R", "UNRATED" };
+	FilmRating ratings[] = { G, PG, PG_13, NC_17, R, UNRATED };
+
+	for (int i = 0; i < N_RATINGS; i++) {
+		if (rating == ratings[i])
+			return stringRatings[i];
+	}
+	return "UNRATED";
+}
+
+int Film::stringToInt(string stringInt) {
+	return 0;
+}

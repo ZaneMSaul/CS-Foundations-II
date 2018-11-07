@@ -1,0 +1,13 @@
+#include <string>
+#include <iostream>
+#include <cstdlib>
+#include<vector>
+
+using namespace std;
+int main () {
+	string movieName = "Blade Runner 2049";
+	cout << movieName.find ("Blade Runner") << endl;
+
+	return 0;
+
+}

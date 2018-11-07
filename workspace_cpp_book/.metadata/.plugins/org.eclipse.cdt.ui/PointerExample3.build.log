@@ -1,0 +1,15 @@
+12:56:23 **** Build of configuration Debug for project PointerExample3 ****
+make all 
+Building file: ../StructPointer.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"StructPointer.d" -MT"StructPointer.d" -o "StructPointer.o" "../StructPointer.cpp"
+Finished building: ../StructPointer.cpp
+ 
+Building target: PointerExample3
+Invoking: GCC C++ Linker
+g++  -o "PointerExample3"  ./StructPointer.o   
+Finished building target: PointerExample3
+ 
+
+12:56:24 Build Finished (took 262ms)
+

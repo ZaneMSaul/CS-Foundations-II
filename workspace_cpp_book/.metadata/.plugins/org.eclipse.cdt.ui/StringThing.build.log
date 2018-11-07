@@ -1,0 +1,14 @@
+14:08:26 **** Incremental Build of configuration Debug for project StringThing ****
+make all 
+Building file: ../StringThing.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"StringThing.d" -MT"StringThing.d" -o "StringThing.o" "../StringThing.cpp"
+../StringThing.cpp: In function ‘int main()’:
+../StringThing.cpp:17:32: error: ‘class std::__cxx11::basic_string<char>’ has no member named ‘to_lower’
+   string candidate = movies[i].to_lower();
+                                ^
+subdir.mk:18: recipe for target 'StringThing.o' failed
+make: *** [StringThing.o] Error 1
+
+14:08:26 Build Finished (took 114ms)
+

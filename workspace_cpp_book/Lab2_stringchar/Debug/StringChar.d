@@ -1,0 +1,1 @@
+StringChar.o: ../StringChar.cpp

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;PointerExample/Main.cpp&apos; to &apos;ArrayPointerInts&apos;" description="Rename resource &apos;Main.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Main.cpp" name="ArrayPointerInts" stamp="1505988958805" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;PointerExample/ArrayPointerInts&apos; to &apos;ArrayPointerInts.cpp&apos;" description="Rename resource &apos;ArrayPointerInts&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="ArrayPointerInts" name="ArrayPointerInts.cpp" stamp="1505989035392" updateReferences="true"/>
+</session>

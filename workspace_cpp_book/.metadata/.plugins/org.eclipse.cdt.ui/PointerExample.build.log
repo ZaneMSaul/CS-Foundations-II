@@ -1,0 +1,15 @@
+12:56:23 **** Build of configuration Debug for project PointerExample ****
+make all 
+Building file: ../ArrayPointerInts.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ArrayPointerInts.d" -MT"ArrayPointerInts.d" -o "ArrayPointerInts.o" "../ArrayPointerInts.cpp"
+Finished building: ../ArrayPointerInts.cpp
+ 
+Building target: PointerExample
+Invoking: GCC C++ Linker
+g++  -o "PointerExample"  ./ArrayPointerInts.o   
+Finished building target: PointerExample
+ 
+
+12:56:23 Build Finished (took 276ms)
+
